@@ -11721,3 +11721,39 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
+/*memberships*/
+.customer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(5%);
+}
+
+.customer-logos .slide img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #memberships {
+    padding: 40px 0;
+  }
+
+  .customer-logos {
+    flex-wrap: wrap;
+    transform: translateX(20px);
+  }
+
+  .customer-logos .slide {
+    flex: 1 0 45%;
+    margin: 10px;
+  }
+
+  .customer-logos .slide img {
+    width: 80px;
+    height: 80px;
+  }
+}
