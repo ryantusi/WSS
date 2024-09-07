@@ -1,17 +1,3 @@
-/*!
-=========================================================
-* LeadMark Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
@@ -35,7 +21,7 @@ $(document).ready(function(){
 $(window).on("load", function() {
     var t = $(".portfolio-container");
     t.isotope({
-        filter: ".new",
+        filter: ".all",
         animationOptions: {
             duration: 750,
             easing: "linear",
@@ -54,3 +40,48 @@ $(window).on("load", function() {
         }), !1
     })
 })
+
+// Membership Slider
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1200,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        touchMove: true,
+        swipe: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+  });
+
+// Email
+function sendMail() {
+    console.log("send mail function triggered");
+
+    // Collect values from the form
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+    
+    // Construct the mailto link with subject and body
+    let mailBody = encodeURIComponent(message + "\n\nFrom: " + name + "\nEmail: " + email);
+    let mailtoLink = "mailto:wss@worldshipsupplies.com,info@worldwide-supply.com?subject=" + encodeURIComponent(subject) + "&body=" + mailBody;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+}
