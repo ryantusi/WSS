@@ -11622,7 +11622,7 @@ textarea.form-control {
   border-radius: 100px;
   padding: 2px;
   margin: 0 auto 20px;
-  max-width: 400px;
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -11684,7 +11684,7 @@ textarea.form-control {
   left: 200%;
   width: 100%;
   height: 100%;
-  background: rgba(255, 110, 66, 0.8);
+  background: rgba(156, 121, 69, 0.85);
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
