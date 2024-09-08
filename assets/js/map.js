@@ -1,11 +1,15 @@
-// Initialize map centered on the world
-var map = L.map('map').setView([20, 0], 2);
+var map = L.map('map', {
+    zoomControl: false,         // Disable zoom control
+    scrollWheelZoom: false,     // Disable zoom by scroll
+    doubleClickZoom: false,     // Disable zoom by double-click
+    dragging: false,            // Disable dragging (panning)
+}).setView([22, 0], 2);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    errorTileUrl: 'path-to-error-tile.png' // handle broken tiles
-}).addTo(map);
+    maxZoom: 2,   // Lock zoom level
+    minZoom: 2,   // Lock zoom level
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map); 
 
 // Define fictional ship supply data per country with ISO codes
 var shipSupplyData = {

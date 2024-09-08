@@ -71,16 +71,9 @@ $(document).ready(function(){
 // Email
 function sendMail() {
     console.log("send mail function triggered");
-
-    // Collect values from the form
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
     
     // Construct the mailto link with subject and body
-    let mailBody = encodeURIComponent(message + "\n\nFrom: " + name + "\nEmail: " + email);
-    let mailtoLink = "mailto:wss@worldshipsupplies.com,info@worldwide-supply.com?subject=" + encodeURIComponent(subject) + "&body=" + mailBody;
+    let mailtoLink = "mailto:wss@worldshipsupplies.com,info@worldwide-supply.com?subject=" + encodeURIComponent("REQUISITION FOR A QUOTATION");
 
     // Open the mailto link
     window.location.href = mailtoLink;

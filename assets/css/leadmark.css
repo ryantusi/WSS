@@ -11212,15 +11212,21 @@ textarea.form-control {
 .navbar.custom-navbar {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #dee2e6;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar.custom-navbar .nav-link {
-  color: #fff;
+  color: #444;
   margin: 0 6px;
 }
 
 .navbar.custom-navbar .nav-link:hover {
-  color: #fff;
+  color: #000;
 }
 
 .navbar.custom-navbar.affix {
@@ -11230,11 +11236,11 @@ textarea.form-control {
   border-bottom: 1px solid #dee2e6;
 }
 
-.navbar.custom-navbar.affix .nav-link {
+.navbar .nav-link {
   color: #444;
 }
 
-.navbar.custom-navbar.affix .nav-link:hover {
+.navbar .nav-link:hover {
   color: #000;
 }
 
@@ -11760,12 +11766,10 @@ textarea.form-control {
 
 /*Map*/
 #map {
-  height: 400px; /* Adjust height as needed */
+  height: 500px; /* Adjust height as needed */
   width: 100%;
   margin-top: 20px;
-  clear: both;
-  position: relative; /* Ensure it doesn't overlap */
-  overflow: hidden;
+  z-index: 0;
 }
 .info {
   padding: 6px 8px;
@@ -11784,4 +11788,8 @@ textarea.form-control {
   float: left;
   margin-right: 8px;
   opacity: 0.7;
+}
+
+.text-right {
+  text-align: right;
 }
