@@ -67,3 +67,11 @@ $(document).ready(function(){
         }]
     });
   });
+
+// Email
+function sendMail() {
+    let mailtoLink = "mailto:wss@worldshipsupplies.com,info@worldwide-supply.com?subject=" + encodeURIComponent("REQUISITION FOR A QUOTE");
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+}
