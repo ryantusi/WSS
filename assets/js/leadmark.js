@@ -67,14 +67,3 @@ $(document).ready(function(){
         }]
     });
   });
-
-// Email
-function sendMail() {
-    console.log("send mail function triggered");
-    
-    // Construct the mailto link with subject and body
-    let mailtoLink = "mailto:wss@worldshipsupplies.com,info@worldwide-supply.com?subject=" + encodeURIComponent("REQUISITION FOR A QUOTATION");
-
-    // Open the mailto link
-    window.location.href = mailtoLink;
-}
