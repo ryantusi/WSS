@@ -18,7 +18,8 @@ var shipSupplyData = {
     "SAU": 501, "KOR": 151, "LKA": 501, "TWN": 251, "THA": 251, "TUR": 501, "ARE": 501,
     "VNM": 151, "YEM": 151, "CYP": 51, "DNK": 51, "FRA": 51, "IRL": 51, "NLD": 51, 
     "NOR": 51, "GBR": 51, "CAN": 51, "PAN": 151, "USA": 151, "BRA": 51, "EGY": 151, 
-    "ZAF": 51, "MAR": 51, "RUS": 151
+    "ZAF": 51, "MAR": 51, "RUS": 151, "CHL": 51, "MEX": 51, "GRC": 1001, "ESP": 51, 
+    "DEU": 51, "ITA": 51 
 };
 
 // Function to assign color based on ship supply numbers
